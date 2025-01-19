@@ -49,6 +49,13 @@
         max-width: none;
     }
 
+    .hero_cta .hide-on-mobile {
+        display: none;
+    }
+
+
+    /* Navbar ******************** */
+
     .nav_mobile button {
         outline: none;
         border: none;

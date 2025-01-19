@@ -17,7 +17,9 @@ function App() {
             </p>
             <div className="hero_cta">
               <a href="">Schedule a demo</a>
-              <span>to see a live preview</span>
+              <p>
+                to see a <span className="hide-on-mobile">live </span>preview
+              </p>
             </div>
           </div>
           <img src="assets/images/illustration-devices.svg" alt="Hero Image" />

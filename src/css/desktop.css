@@ -192,7 +192,7 @@ header nav ul li a.nav_login {
     opacity: 0.25;
 }
 
-.hero_cta span {
+.hero_cta p {
     font-size: 15px;
     letter-spacing: 5px;
     mix-blend-mode: normal;
