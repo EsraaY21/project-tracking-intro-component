@@ -3,6 +3,11 @@
         height: 50%;
     }
 
+    header {
+        padding-inline: 2rem;
+        position: relative;
+    }
+
     .nav_deskop {
         display: none;
     }
@@ -35,15 +40,43 @@
 
     .hero_content h1 {
         margin-bottom: 2rem;
+        max-width: none;
+
     }
 
     .hero_desc {
         margin-bottom: 27px;
+        max-width: none;
     }
 
     .nav_mobile button {
         outline: none;
         border: none;
         background-color: transparent;
+    }
+
+    .nav_mobile ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        gap: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        right: 2rem;
+        z-index: 1000;
+        left: 2rem;
+        top: 4.5rem;
+    }
+
+    .nav_mobile ul .nav_divider {
+        height: 1px;
+        background-color: var(--color-dark);
+        mix-blend-mode: normal;
+        opacity: 0.15;
+        width: 90%;
+        margin-inline: auto;
     }
 }

@@ -35,6 +35,24 @@ export default function Header() {
           >
             <IconHamburger />
           </button>
+
+          <ul>
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <a href="/" aria-label={link}>
+                  {link}
+                </a>
+              </li>
+            ))}
+
+            <li className="nav_divider" aria-hidden="true"></li>
+
+            <li>
+              <a className="nav_login" href="/" aria-label="login">
+                Login
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>

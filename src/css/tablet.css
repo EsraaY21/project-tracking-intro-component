@@ -1,12 +1,10 @@
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (min-width: 770px) and (max-width: 1440px) {
     .hero img {
-        transform: translateX(calc(2vw));
+        transform: translateX(0.2vw);
     }
 
     .hero_content h1 {
         font-size: calc(2.5rem + 0.6vw);
     }
-
-
 
 }
