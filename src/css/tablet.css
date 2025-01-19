@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .nav_deskop {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: block;
+    }
+
+
+}

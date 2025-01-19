@@ -1,31 +1,10 @@
-function App() {
-  const navLinks = ["Product", "Features", "Pricing"];
+import Header from "./components/Header";
 
+function App() {
   return (
     <>
       <main>
-        <header>
-          <nav>
-            <a href="/">
-              <img src="assets/images/logo.svg" alt="Company Logo" />
-            </a>
-            <ul>
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <a href="/">{link}</a>
-                </li>
-              ))}
-
-              <li className="nav_dot"></li>
-
-              <li>
-                <a className="nav_login" href="/">
-                  Login
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
         <section className="hero">
           <div className="hero_content">
             <p className="hero_title_top">

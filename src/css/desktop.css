@@ -16,6 +16,8 @@ body,
 
 main {
     position: relative;
+    max-width: 1500px;
+    margin-inline: auto;
 }
 
 main::before {
@@ -28,6 +30,7 @@ main::before {
     background-color: var(--color-gray-bg);
     border-bottom-left-radius: 60px;
     z-index: -1;
+    max-width: 800px;
 }
 
 h1 {
@@ -92,12 +95,13 @@ header nav ul li a.nav_login {
 }
 
 .hero {
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 165px;
     padding-bottom: 125px;
+    overflow: hidden;
+
 }
 
 
@@ -194,4 +198,8 @@ header nav ul li a.nav_login {
     letter-spacing: 5px;
     mix-blend-mode: normal;
     opacity: 0.5;
+}
+
+.nav_mobile {
+    display: none;
 }
