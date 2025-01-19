@@ -5,28 +5,36 @@ export default function Header() {
 
   return (
     <header>
-      <nav>
-        <a href="/">
+      <nav aria-label="Main navigation">
+        <a href="/" aria-label="Go to homepage">
           <img src="assets/images/logo.svg" alt="Company Logo" />
         </a>
         <ul className="nav_deskop">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <a href="/">{link}</a>
+              <a href="/" aria-label={link}>
+                {link}
+              </a>
             </li>
           ))}
 
-          <li className="nav_dot"></li>
+          <li className="nav_dot" aria-hidden="true"></li>
 
           <li>
-            <a className="nav_login" href="/">
+            <a className="nav_login" href="/" aria-label="login">
               Login
             </a>
           </li>
         </ul>
 
         <div className="nav_mobile">
-          <IconHamburger />
+          <button
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <IconHamburger />
+          </button>
         </div>
       </nav>
     </header>

@@ -36,6 +36,12 @@
     .hero_desc {
         margin-bottom: 27px;
     }
+
+    .nav_mobile button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 
