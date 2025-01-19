@@ -79,4 +79,34 @@
         width: 90%;
         margin-inline: auto;
     }
+
+    /* Rotate animation for the button */
+    .menu-button {
+        transition: transform 0.3s ease;
+    }
+
+    .menu-button.rotate {
+        transform: rotate(90deg);
+    }
+
+    /* Mobile menu animations */
+    .mobile-menu {
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .mobile-menu.visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .mobile-menu.hidden {
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+    }
+
 }

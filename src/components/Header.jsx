@@ -1,7 +1,15 @@
+import { useState } from "react";
 import IconHamburger from "./icons/IconHamburger";
+import IconClose from "./icons/IconClose";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navLinks = ["Product", "Features", "Pricing"];
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
 
   return (
     <header>
@@ -29,14 +37,21 @@ export default function Header() {
 
         <div className="nav_mobile">
           <button
-            aria-label="Open navigation menu"
-            aria-expanded="false"
+            aria-label={
+              menuOpen ? "Close navigation menu" : "Open navigation menu"
+            }
+            aria-expanded={menuOpen}
             aria-controls="mobile-menu"
+            onClick={toggleMenu}
+            className={`menu-button ${menuOpen ? "rotate" : ""}`}
           >
-            <IconHamburger />
+            {menuOpen ? <IconClose /> : <IconHamburger />}
           </button>
 
-          <ul>
+          <ul
+            id="mobile-menu"
+            className={`mobile-menu ${menuOpen ? "visible" : "hidden"}`}
+          >
             {navLinks.map((link, index) => (
               <li key={index}>
                 <a href="/" aria-label={link}>
