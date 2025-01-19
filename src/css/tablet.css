@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    main::before {
+        height: 50%;
+    }
+
     .nav_deskop {
         display: none;
     }
@@ -6,6 +10,44 @@
     .nav_mobile {
         display: block;
     }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding-left: 2rem;
+    }
+
+
+    .hero_content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero img {
+        max-width: none;
+        padding-bottom: 19%;
+        height: 58vh;
+        transform: translateX(0px);
+        align-self: flex-start;
+    }
+
+    .hero_content h1 {
+        margin-bottom: 2rem;
+    }
+
+    .hero_desc {
+        margin-bottom: 27px;
+    }
+}
+
+
+@media (min-width: 800px) and (max-width: 1440px) {
+    .hero img {
+        transform: translateX(calc(2vw));
+    }
+
+    .hero_content h1 {
+        font-size: calc(2.5rem + 0.6vw);
+    }
+
 
 
 }

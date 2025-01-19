@@ -33,15 +33,18 @@ main::before {
     max-width: 800px;
 }
 
-h1 {
+h1,
+a {
     font-family: "Barlow Condensed", serif;
 }
 
 header {
-    padding-top: 64px;
-    padding-left: 165px;
-    padding-right: 165px;
-    padding-bottom: 124px;
+    padding-top: 4.3%;
+    /* padding-top: 64px; */
+    padding-inline: 11.5%;
+    /* padding-inline: 164px; */
+    padding-bottom: 8.3%;
+    /* padding-bottom: 124px; */
 }
 
 header nav {
@@ -57,7 +60,6 @@ header nav ul {
 }
 
 header nav ul li a {
-    font-family: "Barlow Condensed", serif;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 1px;
@@ -98,10 +100,9 @@ header nav ul li a.nav_login {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 165px;
-    padding-bottom: 125px;
+    padding-left: 11.5%;
+    padding-bottom: 8.3%;
     overflow: hidden;
-
 }
 
 
@@ -111,6 +112,7 @@ header nav ul li a.nav_login {
 
 .hero img {
     transform: translateX(150px);
+
 }
 
 .hero_title_top {
@@ -140,8 +142,8 @@ header nav ul li a.nav_login {
 
 .hero_content h1 {
     font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 4rem;
+    line-height: 1;
     max-width: 17ch;
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -173,6 +175,7 @@ header nav ul li a.nav_login {
     padding: 16px 32px;
     border-radius: 5px;
     position: relative;
+    min-width: fit-content;
 }
 
 .hero_cta a:before {
