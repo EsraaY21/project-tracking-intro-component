@@ -10,6 +10,7 @@
 body,
 * {
     font-family: "Barlow", serif;
+    color: var(--color-dark);
 }
 
 h1 {
@@ -20,6 +21,7 @@ header {
     padding-top: 64px;
     padding-left: 165px;
     padding-right: 165px;
+    padding-bottom: 124px;
 }
 
 header nav {
@@ -40,19 +42,104 @@ header nav ul li a {
     font-size: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--color-dark);
 }
 
 header nav ul li.nav_dot {
     width: 6px;
     height: 6px;
-    background: var(--color-dark);
+    background-color: var(--color-dark);
     mix-blend-mode: normal;
     opacity: 0.15;
     border-radius: 100%;
 }
 
 header nav ul li a.nav_login {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.hero {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 165px;
+    padding-bottom: 125px;
+}
+
+
+.hero_content {
+    min-width: fit-content;
+}
+
+.hero img {
+    transform: translateX(150px);
+}
+
+.hero_title_top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "Barlow Condensed", serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.hero_title_top .badge {
+    background-color: var(--color-dark);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 12.5px;
+}
+
+.hero_title_top span:nth-child(2) {
+    letter-spacing: 5px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.hero_content h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    max-width: 17ch;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.hero_desc {
+    font-size: 18px;
+    line-height: 26px;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    max-width: 28ch;
+    margin-bottom: 64px;
+}
+
+.hero_cta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: "Barlow Condensed", serif;
+    text-transform: uppercase;
+}
+
+.hero_cta a {
+    background-color: var(--color-red);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.07px;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+.hero_cta span {
+    font-size: 15px;
+    letter-spacing: 5px;
     mix-blend-mode: normal;
     opacity: 0.5;
 }
